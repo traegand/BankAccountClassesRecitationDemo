@@ -8,7 +8,7 @@ Say You were writing some rudimentary banking software
 	SetMinDeposit(double value) -- Set the minimum deposit amt allowed by the account (must be >= 0)
 	GetMinDeposit() -- Get minimum deposit amt
 	Withdraw(double value) -- subtract the value from the balance if there are sufficient funds
-	TransferFunds(double value, BankAccount otherAccount) -- transfer the funds from one account to another (must be a different account)
+	TransferFunds(double value, BankAccount& otherAccount) -- transfer the funds from one account to another (must be a different account)
 	GetIDNumber() -- The the Account ID number
 	BankAccount() -- construct BankAccount object with a balance of 0 and minDeposit of 0
 	BankAccount(double balance) -- construct BankAccount object with a balance of 'balance' and minDeposit of 0
