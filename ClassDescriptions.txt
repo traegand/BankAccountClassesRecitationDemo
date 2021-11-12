@@ -1,0 +1,41 @@
+Class Summaries
+
+Say You were writing some rudimentary banking software
+
+- BankAccount
+    Behaviors:
+	Deposit(double value) -- add the value to the balance if the value is greater than the min deposit amt
+	SetMinDeposit(double value) -- Set the minimum deposit amt allowed by the account (must be >= 0)
+	GetMinDeposit() -- Get minimum deposit amt
+	Withdraw(double value) -- subtract the value from the balance if there are sufficient funds
+	TransferFunds(double value, BankAccount otherAccount) -- transfer the funds from one account to another (must be a different account)
+	GetIDNumber() -- The the Account ID number
+	BankAccount() -- construct BankAccount object with a balance of 0 and minDeposit of 0
+	BankAccount(double balance) -- construct BankAccount object with a balance of 'balance' and minDeposit of 0
+	BankAccount(double balance, double minDeposit) -- construct BankAccount object with a balance of 'balance' and a minDeposit of 'minDeposit'
+	ToString()
+	
+    Data Members:
+	Account number -- Unique ID number for the account
+	Minimum Deposit amount -- the minimum amount allowed in a deposit
+	Account balance -- The money accessible by the account
+
+- Person
+    Data Members:
+	List of Accounts
+	Name
+	Address
+	birthday
+    Behaviors:
+	SetName(string aName)
+	Person()
+	Person(string aName, string anAddress, string birthday)
+	GetName()
+	OpenAccount(BankAccount account)
+	DepositMoney(double amount, int accountIndex)
+	WithdrawMoney(double amount, int accountIndex)
+	TransferMoney(double amount, int fromAccount, int toAccount)
+	CloseAccount(int accountID)
+	ToString()
+	GetAccountDetails()
+	
